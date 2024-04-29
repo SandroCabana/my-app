@@ -1,0 +1,145 @@
+*{
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.contenedor-principal{
+  padding-top: 10px;
+  background-color: #fff;
+  font-family: Lato, sans-serif;
+  justify-content: center;
+  align-items: center;
+
+}
+.contenedor-tarjetas{
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;*/
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(auto-fill,minmax(15rem, 1fr));
+  gap: 5px;
+  
+  
+}
+.contenedor-tarjeta{
+  display: grid;
+  justify-items: center;
+  padding: 10px;
+  box-shadow: 1px 1px 1px black;
+  border-radius: 20px;
+   
+}
+.contenedor-tarjeta:hover{
+  border: 2px solid #222;
+ 
+
+}
+.imagen{
+  max-width: 225px;
+  max-height: 220px ;
+  border-radius: 20px;
+}
+.label-alive{
+  background-color: green;
+  font-size: smaller;
+  color: azure;
+  border-radius: 5px;
+}
+.label-dead{
+  background-color: red;
+  font-size: smaller;
+  color: azure;
+  border-radius: 5px;
+}
+.label-unk{
+  background-color: grey;
+  font-size: smaller;
+  color: azure;
+  border-radius: 5px;
+}
+.card-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 70px;
+  min-height:30px;
+  background-color: blue;
+  color: azure;
+  font-size: small;
+  border-radius: 5px;
+}
+.card-button:hover{
+  background-color: green;
+  cursor: pointer;
+}
+.button-find{
+  display: flex;
+  background-color: black;
+  color:white;
+  font-size: medium;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  
+  border: none;
+}
+.button-find:hover{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: none;
+}
+.input-find{
+  min-width: 240px;
+  height: 35px;
+  overflow-x: auto;
+  font-size: medium;
+}
+.contenedor-formulario{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+
+}
+.page-navegador{
+  display: flex;
+  flex-wrap: wrap;
+}
+.navegador{
+  background-color: darkblue;
+  color: azure;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left:0;
+  width: 100%;
+  min-height: 700px;
+  min-width: 500px;
+  background-color: rgba(0,0,0,0.55);
+  display: none;
+
+}
+.modal-container{
+  position: relative;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:375px;
+}
+.modal.is-open{
+  display: grid;
+}
+
+.modal-close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
