@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Grid from "@/components/Grid";
 import { useState,useEffect } from "react";
-const defaultEndpoint = `${process.env.API_URL}`;
+const defaultEndpoint = "https://rickandmortyapi.com/api/character/"
 export async function getServerSideProps() {
   const res = await fetch(defaultEndpoint)
   const data = await res.json();
